@@ -7,7 +7,7 @@ export default async function handler(req, res) {
 
   const token = process.env.SHOPIFY_TOKEN;
 
-  try {
+  try { 
     const response = await fetch(`https://${shop}/admin/api/2024-10/variants/${variantId}.json`, {
       headers: {
         'X-Shopify-Access-Token': token,
